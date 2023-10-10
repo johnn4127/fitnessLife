@@ -16,7 +16,10 @@ const Navbars = () => {
             <Nav.Link as={Link} to="/workouts">Specific Workouts</Nav.Link>
             <Nav.Link as={Link} to='/musclegroup'>Muscle Group</Nav.Link>
             <Nav.Link as={Link} to='/equipment'>Search by Equipment</Nav.Link>
+            <Nav.Link as={Link} to='/saved'>Saved</Nav.Link>
+            <Nav.Link as={Link} to='/tip'>Tip</Nav.Link>
             <Nav.Link as={Link} to='/timer'>Workout Timer</Nav.Link>
+            
           </Nav>
         </Container>
       </Navbar>
