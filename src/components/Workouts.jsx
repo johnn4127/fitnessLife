@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/workouts.css'
 
 const Workouts = () => {
   const [specificwkout, setSpecificwkout] = useState([]);
   const [muscleSearch, setMuscleSearch] = useState('');
+
 
   const handleInputChange = (e) => {
     setMuscleSearch(e.target.value);
@@ -16,13 +18,13 @@ const Workouts = () => {
   };
 
   const getWorkoutMuscle = async (specificWorkout) => {
-    const url = `https://exercisedb.p.rapidapi.com/exercises/name/${specificWorkout}?limit=10`;
+    const url = `https://exercisedb.p.rapidapi.com/exercises/name/${specificWorkout}?limit=12`;
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '0de2017cb2msh31d23ba8200d806p1cf1a2jsna4b99eb183c6',
-        'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-      },
+        'X-RapidAPI-Key': 'b89465e0a8msh3ce47971ac8469fp17c318jsnf6870ec3ca8e',
+        'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+      }
     };
 
     try {
@@ -34,6 +36,11 @@ const Workouts = () => {
     }
   };
 
+
+    useEffect(()=>{
+     getWorkoutMuscle("dumbbell") 
+    },[])
+  
   return (
     <div>
       <div className="mainContainer">
@@ -44,7 +51,7 @@ const Workouts = () => {
               Search Your Workout
             </Button>
           </div>
-          <div>
+          <div className='workoutcard'>
             {specificwkout.map((workout, index) => (
               <Card key={index} style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={workout.gifUrl} />
@@ -52,7 +59,7 @@ const Workouts = () => {
                   <Card.Title>{workout.name}</Card.Title>
                   <Card.Text>{workout.equipment}</Card.Text>
                   <Card.Text>{workout.instructions}</Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">Add to Daily Workout</Button>
                 </Card.Body>
               </Card>
             ))}

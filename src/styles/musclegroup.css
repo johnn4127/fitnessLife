@@ -1,0 +1,14 @@
+.musclegroupcardcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.musclebutton{
+margin: 25px;
+width: 100%;
+}
