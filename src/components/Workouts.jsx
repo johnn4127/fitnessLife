@@ -17,6 +17,7 @@ const Workouts = () => {
     getWorkoutMuscle(muscleSearch);
   };
 
+  
   const getWorkoutMuscle = async (specificWorkout) => {
     const url = `https://exercisedb.p.rapidapi.com/exercises/name/${specificWorkout}?limit=12`;
     const options = {
