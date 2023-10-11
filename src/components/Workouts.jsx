@@ -23,7 +23,7 @@ const Workouts = () => {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': 'e996a1879dmshdbc548a3916aeeap1009ffjsnd2dd76ae7730',
+        'X-RapidAPI-Key': import.meta.env.VITE_REACT_APP_EXERCISEDB,
         'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
       }
     };
