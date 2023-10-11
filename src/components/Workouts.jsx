@@ -7,6 +7,7 @@ import '../styles/workouts.css'
 const Workouts = () => {
   const [specificwkout, setSpecificwkout] = useState([]);
   const [muscleSearch, setMuscleSearch] = useState('');
+  const [savedWorkouts, setSavedWorkouts] = useState([]);
 
 
   const handleInputChange = (e) => {
@@ -22,7 +23,7 @@ const Workouts = () => {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': 'b89465e0a8msh3ce47971ac8469fp17c318jsnf6870ec3ca8e',
+        'X-RapidAPI-Key': 'e996a1879dmshdbc548a3916aeeap1009ffjsnd2dd76ae7730',
         'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
       }
     };
@@ -36,8 +37,12 @@ const Workouts = () => {
     }
   };
 
-
+  const savedWorkouts = (exercise) => {
+    name: exercise.name
+    image: exercise.gifUrl
+  }
     useEffect(()=>{
+      console.log("hello")
      getWorkoutMuscle("dumbbell") 
     },[])
   

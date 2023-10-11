@@ -11,15 +11,16 @@ const Musclegroup = () => {
   const [selectedMuscleGroup, setSelectedMuscleGroup] = useState('chest');
   const [showCardModal, setShowCardModal] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
+  
 
   const getWorkoutMG = async (muscle) => {
     const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${muscle}?limit=12&offset=${offSetNum}`;
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': 'b89465e0a8msh3ce47971ac8469fp17c318jsnf6870ec3ca8e',
-        'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-      },
+        'X-RapidAPI-Key': 'e996a1879dmshdbc548a3916aeeap1009ffjsnd2dd76ae7730',
+        'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+      }
     };
 
     try {
@@ -31,6 +32,8 @@ const Musclegroup = () => {
       setMuscleGroupWkout([]);
     }
   };
+
+ 
 
   const handleMuscleGroupClick = (muscle) => {
     setSelectedMuscleGroup(muscle);
@@ -53,7 +56,7 @@ const Musclegroup = () => {
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('all')}>
           All
         </Button>{' '}
-        <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('cardio')}>
+        < Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('cardio')}>
           Cardio
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('chest')}>
