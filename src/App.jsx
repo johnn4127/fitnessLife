@@ -26,7 +26,6 @@ const App = () => {
       <Route path='/timer' element= {<Timer/>}/>
 
       </Routes>
-      <Planner/>
     </div>
   )
 }
