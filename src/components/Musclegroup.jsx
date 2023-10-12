@@ -2,9 +2,18 @@ import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/musclegroup.css';
-
+import abs from '../assets/muscleIcons/abs.png'
+import back from '../assets/muscleIcons/back.png'
+import cardio from '../assets/muscleIcons/runner.png'
+import chest from '../assets/muscleIcons/pectorals.png'
+import calves from '../assets/muscleIcons/calves.png'
+import lowerarms from '../assets/muscleIcons/competition.png'
+import upperarms from '../assets/muscleIcons/muscle.png'
+import shoulders from '../assets/muscleIcons/shoulder.png'
+import upperleg from '../assets/muscleIcons/leg.png'
 const Musclegroup = () => {
   const [muscleGroupWkout, setMuscleGroupWkout] = useState([]);
   const [offSetNum, setOffSetNum] = useState(1);
@@ -57,34 +66,32 @@ const Musclegroup = () => {
           All
         </Button>{' '}
         < Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('cardio')}>
-          Cardio
+          <img className='muscleIcon' src={cardio} alt="" /> Cardio
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('chest')}>
-          Chest
+          <img className='muscleIcon' src={chest} alt="" /> Chest
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('back')}>
-          Back
+          <img className='muscleIcon' src={back} alt="" /> Back
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('upper%20arms')}>
+          <img className='muscleIcon' src={upperarms} alt="" />
           Upper Arms
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('lower%20arms')}>
-          Lower Arms
+          <img className='muscleIcon' src={lowerarms} alt="" /> Lower Arms
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('upper%20legs')}>
-          Upper Legs
+          <img className='muscleIcon' src={upperleg} alt="" /> Upper Legs
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('lower%20legs')}>
-          Lower Legs
+          <img className='muscleIcon' src={calves} alt="" /> Lower Legs
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('shoulders')}>
-          Shoulders
-        </Button>{' '}
-        <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('neck')}>
-          Neck
+          <img className='muscleIcon' src={shoulders} alt="" /> Shoulders
         </Button>{' '}
         <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('waist')}>
-          Waist
+          <img className='muscleIcon' src={abs} alt="" /> Abs
         </Button>{' '}
       </div>
       <div className='musclegroupcardcontainer'>
