@@ -8,7 +8,7 @@ import Timer from './components/Timer'
 import {Routes, Route} from 'react-router-dom'
 import Saved from './components/Saved'
 import Tip from './components/Tip'
-
+import Planner from './components/Planner'
 
 const App = () => {
   return (
@@ -26,6 +26,7 @@ const App = () => {
       <Route path='/timer' element= {<Timer/>}/>
 
       </Routes>
+      <Planner/>
     </div>
   )
 }
