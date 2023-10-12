@@ -12,11 +12,11 @@ const Planner = () => {
   const [modalTitle, setModalTitle] = useState('');
   const [workoutDescriptions, setWorkoutDescriptions] = useState({
     'Leg Workouts': `Four sets of 10 reps: Squats, Lunges, Deadlifts, Leg Press, Leg Curls, and Step-Ups. ${endWk}`,
-    'Chest/Tri': `Four sets of 10 reps: Bench Press, Dumbbell Flys, Incline Bench Press, Cable Crossover; Triceps: Tricep Dips, Tricep Pushdowns (Cable Machine), Close-Grip Bench Press, and Skull Crushers (Lying Tricep Extensions). `,
-    'Back/Bi': `Four sets of 10 reps: Back: Pull-Ups, Bent-Over Rows, Lat Pulldowns, and Deadlifts; Biceps: Bicep Curls, Hammer Curls, Preacher Curls, and Concentration Curls. {}`,
-    'Abs/Shoulders': `Four sets of 10 reps: Abs: Crunches, Leg Raises, Planks, and Russian Twists; Shoulders: Overhead Shoulder Press, Lateral Raises, Front Raises, and Upright Rows.`,
+    'Chest/Tri': `Four sets of 10 reps: Bench Press, Dumbbell Flys, Incline Bench Press, Cable Crossover; Triceps: Tricep Dips, Tricep Pushdowns (Cable Machine), Close-Grip Bench Press, and Skull Crushers (Lying Tricep Extensions). ${endWk} `,
+    'Back/Bi': `Four sets of 10 reps: Back: Pull-Ups, Bent-Over Rows, Lat Pulldowns, and Deadlifts; Biceps: Bicep Curls, Hammer Curls, Preacher Curls, and Concentration Curls. ${endWk}`,
+    'Abs/Shoulders': `Four sets of 10 reps: Abs: Crunches, Leg Raises, Planks, and Russian Twists; Shoulders: Overhead Shoulder Press, Lateral Raises, Front Raises, and Upright Rows.${endWk}`,
     'Hobbies': 'Active Hobbies: hiking, swimming, yoga, pilates, and playing a sport (e.g., pickleball, basketball).',
-    'Rest': 'Stretch and take a relaxing day.',
+    'Rest': 'Stretch and take a relaxing day. ',
   });
 
   
