@@ -62,7 +62,27 @@ const Musclegroup = () => {
 
   return (
     <div>
-      
+      <div className="hero-container">
+      <section className="dark:bg-gray-800 dark:text-gray-100">
+	<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/d93f9c65397547.5af2fc5f3a71e.gif" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+		</div>
+		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+			<h1 className="text-5xl font-bold leadi sm:text-6xl">Ac mattis
+				<span className="dark:text-violet-400">senectus</span>erat pharetra
+			</h1>
+			<p className="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
+				<br/> className="hidden md:inline lg:hidden" turpis pulvinar, est scelerisque ligula sem
+			</p>
+			<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+				<a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Suspendisse</a>
+				<a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Malesuada</a>
+			</div>
+		</div>
+	</div>
+</section>
+    </div>
       <div className='buttons'>
         < Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('cardio')}>
           <img className='muscleIcon' src={cardio} alt="" /> Cardio
@@ -93,18 +113,7 @@ const Musclegroup = () => {
           <img className='muscleIcon' src={abs} alt="" /> Abs
         </Button>{' '}
       </div>
-      <div className="hero-container">
-      <div className="hero-content">
-        <div className="text">
-          <h1>Your Text Goes Here</h1>
-          <p>Some description or additional text can go here.</p>
-          <button className="btn btn-primary">Learn More</button>
-        </div>
-        <div className="image">
-          <img src="" alt="Hero" />
-        </div>
-      </div>
-    </div>
+      
       <div className='musclegroupcardcontainer'>
         {muscleGroupWkout &&
           muscleGroupWkout.map((workout, index) => (
