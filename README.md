@@ -2,5 +2,29 @@ FitnessLife is a comprehensive fitness website designed to help you achieve your
 
 FitnessLife utilizes React Bootstrap, Mamba.UI, Tailwind CSS/UI as the libraries. 
 
+Introduction Page:
+![readMePics](./src/assets/readMePics/Introduction.png)
 
-![readMePics]!(./src/assets/readMePics/Introduction.png)
+
+Donation Setup used BuyMeACoffee:
+![readMePics](./src/assets/readMePics/BuyMeCoffee.png)
+
+Planner used React Bootstrap:
+![readMePics](./src/assets/readMePics/Planner.png)
+
+
+This is the search workout page:
+![readMePics](./src/assets/readMePics/Specific.png)
+
+
+This is grouping the buttons by the muscle groups.
+![readMePics](./src/assets/readMePics/MuscleGroups.png)
+
+
+This is grouping the buttons by equipment.
+![readMePics](./src/assets/readMePics/Equipment.png)
+
+
+Testimonial, used Tailwind:
+![readMePics](./src/assets/readMePics/Testimonial.png)
+
