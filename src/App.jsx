@@ -4,15 +4,16 @@ import Workouts from './components/Workouts'
 import Navbars from './components/Navbars'
 import Musclegroup from './components/Musclegroup'
 import Equipment from './components/Equipment'
-import Timer from './components/Timer'
+import Header from './components/Header'
 import {Routes, Route} from 'react-router-dom'
-import Saved from './components/Saved'
-import Tip from './components/Tip'
-import Planner from './components/Planner'
+
 import Bmi from './components/Bmi'
+import './App.css'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
+      <Header/>
       <Navbars/>
 
       <Routes>
@@ -21,12 +22,10 @@ const App = () => {
       <Route path='/workouts' element= {<Workouts/>}/>
       <Route path='/musclegroup' element= {<Musclegroup/>}/>
       <Route path='/equipment' element= {<Equipment/>}/>
-      <Route path='/saved' element= {<Saved/>}/>
-      <Route path='/tip' element= {<Tip/>}/>
-      <Route path='/timer' element= {<Timer/>}/>
       <Route path='/bmi' element= {<Bmi/>}/>
 
       </Routes>
+      <Footer/>
     </div>
   )
 }

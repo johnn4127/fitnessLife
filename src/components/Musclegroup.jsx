@@ -62,10 +62,8 @@ const Musclegroup = () => {
 
   return (
     <div>
+      
       <div className='buttons'>
-        <Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('all')}>
-          All
-        </Button>{' '}
         < Button className='musclebutton' variant="primary" onClick={() => handleMuscleGroupClick('cardio')}>
           <img className='muscleIcon' src={cardio} alt="" /> Cardio
         </Button>{' '}
@@ -95,6 +93,18 @@ const Musclegroup = () => {
           <img className='muscleIcon' src={abs} alt="" /> Abs
         </Button>{' '}
       </div>
+      <div className="hero-container">
+      <div className="hero-content">
+        <div className="text">
+          <h1>Your Text Goes Here</h1>
+          <p>Some description or additional text can go here.</p>
+          <button className="btn btn-primary">Learn More</button>
+        </div>
+        <div className="image">
+          <img src="" alt="Hero" />
+        </div>
+      </div>
+    </div>
       <div className='musclegroupcardcontainer'>
         {muscleGroupWkout &&
           muscleGroupWkout.map((workout, index) => (
@@ -136,6 +146,7 @@ const Musclegroup = () => {
           </Button>
         </Modal.Footer>
       </Modal>
+      
     </div>
   );
 };

@@ -32,7 +32,7 @@ const Planner = () => {
 
   return (
     <div>
-      <h1>Sample Weekly Planner</h1>
+      <h1 style={{display:'flex',justifyContent:'center'}}> Sample Weekly Planner</h1>
       <div>
         <Table striped bordered hover>
           <thead>

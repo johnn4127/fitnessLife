@@ -1,7 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .mainContainer{
     display: flex;
     justify-content: center;
-    background-color: rgb(134, 134, 134);
 }
 .main-con-img{
     height: 50vh;

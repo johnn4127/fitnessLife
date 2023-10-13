@@ -3,7 +3,7 @@ import Planner from './Planner'
 import '../styles/homepage.css'
 import { createContext } from 'react'
 import { useState } from 'react'
-
+import Hero from './Hero'
 
 export const Cardio = createContext()
 
@@ -16,16 +16,13 @@ const Homepage = () => {
 
   return (
     <>
-      <div className='mainContainer'>
-        <div className='leftContainer' >leftside</div>
-        <div >
-          <img className='main-con-img' src="https://tropeaka.com/cdn/shop/articles/main_image_d517c79f-4ec7-4946-bb5e-db7e80623e85_1080x.jpg?v=1571697737" alt="" />
-        </div>
-        <div className='rightContainer'>rightside</div>
-      </div>
+    <Hero/>
+      
       <Cardio.Provider value={{endOfWorkout}}>
         <Planner />
       </Cardio.Provider>
+
+
     </>
   )
 }
