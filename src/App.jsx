@@ -9,7 +9,7 @@ import {Routes, Route} from 'react-router-dom'
 import Saved from './components/Saved'
 import Tip from './components/Tip'
 import Planner from './components/Planner'
-
+import Bmi from './components/Bmi'
 const App = () => {
   return (
     <div>
@@ -24,6 +24,7 @@ const App = () => {
       <Route path='/saved' element= {<Saved/>}/>
       <Route path='/tip' element= {<Tip/>}/>
       <Route path='/timer' element= {<Timer/>}/>
+      <Route path='/bmi' element= {<Bmi/>}/>
 
       </Routes>
     </div>

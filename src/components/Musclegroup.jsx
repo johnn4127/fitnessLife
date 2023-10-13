@@ -14,13 +14,14 @@ import lowerarms from '../assets/muscleIcons/competition.png'
 import upperarms from '../assets/muscleIcons/muscle.png'
 import shoulders from '../assets/muscleIcons/shoulder.png'
 import upperleg from '../assets/muscleIcons/leg.png'
+
 const Musclegroup = () => {
   const [muscleGroupWkout, setMuscleGroupWkout] = useState([]);
   const [offSetNum, setOffSetNum] = useState(1);
   const [selectedMuscleGroup, setSelectedMuscleGroup] = useState('chest');
   const [showCardModal, setShowCardModal] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
-  
+
 
   const getWorkoutMG = async (muscle) => {
     const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${muscle}?limit=12&offset=${offSetNum}`;
@@ -42,7 +43,7 @@ const Musclegroup = () => {
     }
   };
 
- 
+
 
   const handleMuscleGroupClick = (muscle) => {
     setSelectedMuscleGroup(muscle);
@@ -106,10 +107,10 @@ const Musclegroup = () => {
               />
               <Card.Body>
                 <Card.Title>{workout.name}</Card.Title>
-                
+
                 <Card.Text>Target: <br /> {workout.target}</Card.Text>
                 <Card.Text>Secondary Muscles: <br /> {workout.secondaryMuscles.toString().replace(/,/g, ', ')}</Card.Text>
-                
+
               </Card.Body>
             </Card>
           ))}
