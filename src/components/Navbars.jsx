@@ -17,11 +17,6 @@ const Navbars = () => {
             <Nav.Link className='navButton' as={Link} to="/workouts">Specific Workouts</Nav.Link>
             <Nav.Link className='navButton' as={Link} to='/musclegroup'>Muscle Group</Nav.Link>
             <Nav.Link className='navButton' as={Link} to='/equipment'>Search by Equipment</Nav.Link>
-            <Nav.Link className='navButton' as={Link} to='/saved'>Saved</Nav.Link>
-            <Nav.Link className='navButton' as={Link} to='/tip'>Tip</Nav.Link>
-            <Nav.Link className='navButton' as={Link} to='/timer'>Workout Timer</Nav.Link>
-            <Nav.Link className='navButton' as={Link} to='/bmi'>BMI</Nav.Link>
-            
             
           </Nav>
         </Container>
