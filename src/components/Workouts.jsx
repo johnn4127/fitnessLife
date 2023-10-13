@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/workouts.css';
+import SpecificHero from './SpecificHero';
 
 const Workouts = () => {
   const [specificwkout, setSpecificwkout] = useState([]);
@@ -53,11 +54,12 @@ const Workouts = () => {
 
   return (
     <div>
+      <SpecificHero/>
       <div className="mainContainer">
         <div className="dropdown">
           <div className="searchBar">
-            <input type="text" value={muscleSearch} onChange={handleInputChange} />
-            <Button variant="primary" onClick={handleSearch}>
+            <input className='actualSearch' type="text" placeholder='Type in Your Exercise Here!' value={muscleSearch} onChange={handleInputChange} />
+            <Button className='buttonSearch' variant="primary" onClick={handleSearch}>
               Search Your Workout
             </Button>
           </div>
