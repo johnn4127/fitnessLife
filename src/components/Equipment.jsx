@@ -15,6 +15,7 @@ import weighted from '../assets/equipmentIcons/weight.png'
 import barbell from '../assets/equipmentIcons/barbell.png'
 import dumbbell from '../assets/equipmentIcons/dumbbells.png'
 import '../styles/equipment.css'
+import EquipmentHero from './EquipmentHero';
 
 const Equipment = () => {
   const [equipmentMuscles, setEquipmentMuscles] = useState([]);
@@ -62,40 +63,41 @@ const Equipment = () => {
 
   return (
     <div>
+      <EquipmentHero />
       <div className='buttons'>
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('barbell')}>
           <img className='equipmentIcon' src={barbell} alt="" /> Barbell
         </Button>{' '}
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('ez%20barbell')}>
-        <img className='equipmentIcon'src={ezbarbell} alt="" /> Ez Barbell
+          <img className='equipmentIcon' src={ezbarbell} alt="" /> Ez Barbell
         </Button>{' '}
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('dumbbell')}>
-        <img className='equipmentIcon' src={dumbbell} alt="" /> Dumbbell
+          <img className='equipmentIcon' src={dumbbell} alt="" /> Dumbbell
         </Button>{' '}
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('body%20weight')}>
-        <img className='equipmentIcon' src={bodyWeight} alt="" /> Body Weight
+          <img className='equipmentIcon' src={bodyWeight} alt="" /> Body Weight
         </Button>{' '}
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('assisted')}>
-         <img className='equipmentIcon' src={assisted} alt="" /> Assisted
+          <img className='equipmentIcon' src={assisted} alt="" /> Assisted
         </Button>{' '}
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('weighted')}>
           <img className='equipmentIcon' src={weighted} alt="" /> Weighted
         </Button>{' '}
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('cable')}>
-        <img className='equipmentIcon' src={cable} alt="" /> Cable
+          <img className='equipmentIcon' src={cable} alt="" /> Cable
         </Button>{' '}
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('medicine%20ball')}>
-        <img className='equipmentIcon' src={medicine} alt="" /> Medicine Ball
+          <img className='equipmentIcon' src={medicine} alt="" /> Medicine Ball
         </Button>{' '}
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('kettlebell')}>
-        <img className='equipmentIcon' src={kettlebell} alt="" />  Kettlebell
+          <img className='equipmentIcon' src={kettlebell} alt="" />  Kettlebell
         </Button>{' '}
-        
+
         <Button className='equipment' variant="primary" onClick={() => handleEquipmentGroupClick('smith%20machine')}>
-        <img className='equipmentIcon' src={smith} alt="" /> Smith Machine
+          <img className='equipmentIcon' src={smith} alt="" /> Smith Machine
         </Button>{' '}
-        
-        
+
+
       </div>
       <div className='musclegroupcardcontainer'>
         {equipmentMuscles &&

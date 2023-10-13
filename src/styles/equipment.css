@@ -1,6 +1,7 @@
 .equipmentIcon{
     width: 50%;
     height: auto;
+    flex-wrap: wrap;
 }
 .equipment{
     margin: 25px;

@@ -7,7 +7,7 @@ import Equipment from './components/Equipment'
 import Header from './components/Header'
 import {Routes, Route} from 'react-router-dom'
 
-import Bmi from './components/Bmi'
+
 import './App.css'
 import Footer from './components/Footer'
 const App = () => {
@@ -22,7 +22,6 @@ const App = () => {
       <Route path='/workouts' element= {<Workouts/>}/>
       <Route path='/musclegroup' element= {<Musclegroup/>}/>
       <Route path='/equipment' element= {<Equipment/>}/>
-      <Route path='/bmi' element= {<Bmi/>}/>
 
       </Routes>
       <Footer/>
