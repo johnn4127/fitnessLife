@@ -114,8 +114,9 @@ const Musclegroup = () => {
             </Card>
           ))}
       </div>
-      <button onClick={() => setOffSetNum(offSetNum + 10)}>Next</button>
-
+      <div style={{display:'flex',justifyContent:'center',margin:'25px'}}>
+      <Button style={{width:'10vw',height:'10vh',fontSize:'x-large'}}  onClick={() => setOffSetNum(offSetNum + 10)}>Next</Button>
+      </div>
       <Modal show={showCardModal} onHide={() => setShowCardModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>{selectedCard && selectedCard.name}</Modal.Title>
