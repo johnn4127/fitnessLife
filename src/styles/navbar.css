@@ -1,0 +1,6 @@
+.navButton.nav-link{
+    margin-left: 75px;
+    display: flex;
+    justify-content: space-between;
+    word-spacing: normal;
+}
