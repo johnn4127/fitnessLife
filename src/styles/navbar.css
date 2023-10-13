@@ -3,4 +3,8 @@
     display: flex;
     justify-content: space-between;
     word-spacing: normal;
+    
+}
+.me-auto.navbar-nav{
+    flex-wrap: wrap;
 }
