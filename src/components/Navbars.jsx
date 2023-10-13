@@ -9,9 +9,13 @@ const Navbars = () => {
   return (
     <div>
         <div>
+        
         <Navbar bg="primary" data-bs-theme="dark">
+          
         <Container>
+        <Link to="/">
           <Navbar.Brand className='homeNavButton' href="#home">FitnessLife</Navbar.Brand>
+          </Link>
           <Nav className="me-auto">
             <Nav.Link className='navButton' as={Link} to='/'>Home</Nav.Link>
             <Nav.Link className='navButton' as={Link} to="/workouts">Specific Workouts</Nav.Link>
