@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import '../styles/navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -10,15 +11,17 @@ const Navbars = () => {
         <div>
         <Navbar bg="primary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">FitnessLife</Navbar.Brand>
+          <Navbar.Brand className='homeNavButton' href="#home">FitnessLife</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/'>Home</Nav.Link>
-            <Nav.Link as={Link} to="/workouts">Specific Workouts</Nav.Link>
-            <Nav.Link as={Link} to='/musclegroup'>Muscle Group</Nav.Link>
-            <Nav.Link as={Link} to='/equipment'>Search by Equipment</Nav.Link>
-            <Nav.Link as={Link} to='/saved'>Saved</Nav.Link>
-            <Nav.Link as={Link} to='/tip'>Tip</Nav.Link>
-            <Nav.Link as={Link} to='/timer'>Workout Timer</Nav.Link>
+            <Nav.Link className='navButton' as={Link} to='/'>Home</Nav.Link>
+            <Nav.Link className='navButton' as={Link} to="/workouts">Specific Workouts</Nav.Link>
+            <Nav.Link className='navButton' as={Link} to='/musclegroup'>Muscle Group</Nav.Link>
+            <Nav.Link className='navButton' as={Link} to='/equipment'>Search by Equipment</Nav.Link>
+            <Nav.Link className='navButton' as={Link} to='/saved'>Saved</Nav.Link>
+            <Nav.Link className='navButton' as={Link} to='/tip'>Tip</Nav.Link>
+            <Nav.Link className='navButton' as={Link} to='/timer'>Workout Timer</Nav.Link>
+            <Nav.Link className='navButton' as={Link} to='/bmi'>BMI</Nav.Link>
+            
             
           </Nav>
         </Container>
