@@ -28,4 +28,3 @@ This is grouping the buttons by equipment.
 Testimonial, used Tailwind:
 ![readMePics](./src/assets/readMePics/Testimonial.png)
 
-![readMePics]!(./src/assets/readMePics/Introduction.png)
