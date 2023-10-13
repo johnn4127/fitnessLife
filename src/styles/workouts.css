@@ -2,4 +2,21 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 50px;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.actualSearch{
+    width: 40vw;
+    height: 10vh;
+    font-size: larger;
+    border-radius: 10px;
+}
+.buttonSearch{
+    margin-left: 50px;
+    font-size: larger;
 }
