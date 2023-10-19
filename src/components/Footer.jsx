@@ -8,11 +8,11 @@ const Footer = () => {
 				<div className="grid grid-cols-12">
 					<div className="pb-6 col-span-full md:pb-0 md:col-span-6">
 					<Link to="/">
-						<a style={{ textDecoration: 'none' }} rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 md:justify-start">
+						<a  rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 md:justify-start">
 							<div style={{backgroundColor:'#86d4f1'}} className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
 								<img src={MainLogo} alt="" />
 							</div>
-							<span className="self-center text-2xl font-semibold">FitnessLife</span>
+							<span style={{textDecoration:'none'}} className="self-center text-2xl font-semibold">FitnessLife</span>
 						</a>
 					</Link>
 					</div>

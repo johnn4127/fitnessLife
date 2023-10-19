@@ -119,7 +119,7 @@ const Equipment = () => {
           ))}
       </div>
       <div style={{display:'flex',justifyContent:'center',margin:'25px'}}>
-      <Button style={{width:'10vw',height:'10vh',fontSize:'x-large'}}  onClick={() => setOffSetNum(offSetNum + 10)}>Next</Button>
+      <Button style={{height:'10%',fontSize:'x-large'}}  onClick={() => setOffSetNum(offSetNum + 10)}>Next</Button>
       </div>
 
       <Modal show={showCardModal} onHide={() => setShowCardModal(false)}>
