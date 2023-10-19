@@ -13,7 +13,7 @@ const Navbars = () => {
         <Navbar bg="primary" data-bs-theme="dark">
           
         <Container>
-        <Link to="/">
+        <Link style={{textDecoration:'none'}} to="/">
           <Navbar.Brand className='homeNavButton' href="#home">FitnessLife</Navbar.Brand>
           </Link>
           <Nav className="me-auto">
