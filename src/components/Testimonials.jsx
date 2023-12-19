@@ -57,6 +57,7 @@ const Testimonials = () => {
 						<path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
 						<path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
 					</svg>
+					
 				</p>
 			</div>
 			<div style={{backgroundColor:'#86d4f1'}} className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
