@@ -22,7 +22,7 @@ const Testimonials = () => {
 				</p>
 			</div>
 			<div style={{backgroundColor:'#86d4f1'}} className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
-				<img src="https://media.licdn.com/dms/image/D4D03AQED2J3h39xSSg/profile-displayphoto-shrink_800_800/0/1697125924018?e=1702512000&v=beta&t=fdS1eF1o6V9CpcQPMxcVrXC0kVGPIbf1bleM4diHhoY" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
+				<img src="https://media.licdn.com/dms/image/D4E35AQH5memMyBFcng/profile-framedphoto-shrink_800_800/0/1700680685444?e=1703556000&v=beta&t=JgpK5H8wPB0vQLHULaHxqz-ZNIVgi7ZvxxwXfHlUf0I" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
 				<p className="text-xl font-semibold leadi">Kenny Pham</p>
 				<p className="text-sm uppercase">Senior Front-End Developer</p>
 			</div>
@@ -41,7 +41,7 @@ const Testimonials = () => {
 				</p>
 			</div>
 			<div style={{backgroundColor:'#86d4f1'}} className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
-				<img src="https://media.licdn.com/dms/image/D5603AQFHi7lC2bwniA/profile-displayphoto-shrink_800_800/0/1697126385530?e=1702512000&v=beta&t=yqv-kzkxpYHJwEZcwMJG01sySLpsbIp_Zd1HxUoJvwI" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
+				<img src="https://media.licdn.com/dms/image/D5635AQHN2MOlsbudAg/profile-framedphoto-shrink_800_800/0/1700680727016?e=1703556000&v=beta&t=Ubf-IoieFAYnscGyhpgtsSWLWJWv6Oi5CXqhgDeC1IE" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
 				<p className="text-xl font-semibold leadi">Tony Vu</p>
 				<p className="text-sm uppercase">Software Engineer</p>
 			</div>
@@ -60,7 +60,7 @@ const Testimonials = () => {
 				</p>
 			</div>
 			<div style={{backgroundColor:'#86d4f1'}} className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
-				<img  src="https://media.licdn.com/dms/image/D4D03AQHXT9cXZk0vww/profile-displayphoto-shrink_800_800/0/1697126778919?e=1702512000&v=beta&t=WPbLfmG4Pjcowrw2V-MrmGRpa8kIyOMw6Y4Kv9wKS3g" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
+				<img  src="https://media.licdn.com/dms/image/D4D03AQHXT9cXZk0vww/profile-displayphoto-shrink_800_800/0/1697126779243?e=1708560000&v=beta&t=lWIGb6kbJKvY3XdT-imUSuFN4E_BPTkyEEXhpdu_1kA" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
 				<p  className="text-xl font-semibold leadi">Hien Nguyen</p>
 				<p className="text-sm uppercase">Data Architect</p>
 			</div>
